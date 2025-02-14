@@ -12,7 +12,7 @@ function cargarPaginaPrincipal(argument) {
   fetch(direccion)
       .then(response => response.text())  // Leemos el archivo como texto
       .then(data => {
-        // Inyectamos el contenido en el div con id "contenido"
+        
         document.getElementById('contenido_principal').innerHTML = data;
        
       })
@@ -21,7 +21,7 @@ function cargarPaginaPrincipal(argument) {
 
 }
 
-function cargarPagina(argument) {
+function cargarPaginaListado(argument) {
 
   let direccion="Pages/"+argument+".html";
   fetch(direccion)
