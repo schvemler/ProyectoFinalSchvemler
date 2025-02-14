@@ -1,13 +1,20 @@
- 
 
-<header class="row justify-content-center">
-    <div class="col-12 text-center">
-      <h1>Bienvenidos a la calculadora de costo en panificados</h1>
-    </div>
-  </header>
 
  <main class="container flex-grow-1" >
 
+<div class="px-4 py-5 my-5 text-center">
+
+    <h1 class="display-5 fw-bold text-body-emphasis">Calculadora de Costos de Panificados</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Listado de Mercaderia en Stock </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="cargarPaginaPrincipal()">Volver</button>
+       
+      </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
 
 
     <button  class="btn btn-danger mb-3" id="buttonBorrar" style="display: none;" onclick="borrar()">Borrar</button>
@@ -34,43 +41,4 @@
   </main>
 
 
-  <!-- Button trigger modal -->
-
-
-<!-- Modal -->
-<div class="modal fade" id="nueva" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingrese Producto</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">Nombre</span>
-  <input  name="nombre" id="nombree"type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
-</div>
-
-
-
-Costo
-<div class="input-group mb-3">
-  <span class="input-group-text">$</span>
-  <input type="number" name="costo" id="costor" class="form-control" aria-label="Amount (to the nearest dollar)">
  
-</div>
-</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary" onclick="guardarDatosMateriaPrima()">Guardar producto</button>
-      </div>
-    </div>guardarDatosMateriaPrima()
-  </div>
-</div>
-
-
-
-
-    <input type="text" id="nombre" placeholder="Nombre del ingrediente" >
-    <input type="number" id="costo" placeholder="Costo del ingrediente" >
-    <button onclick="guardarDatosMateriaPrima()"">Guardar</button>

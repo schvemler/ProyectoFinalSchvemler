@@ -1,0 +1,83 @@
+
+  <button onclick="cargarDatos()">Cargar Datos</button>
+  <input type="text" name="nombre" id="nombre">
+  <input type="number" name="edad" id="edad">
+  <button id="guardarBtn" onclick="guardarDatos()">Guardar Cambios</button>
+  <button id="actualizarBtn" style="display:none;">Actualizar</button>
+
+    <!-- Contenido principal -->
+  <header class="row justify-content-center">
+    <div class="col-12 text-center">
+      <h1>Bienvenidos a la calculadora de costo en panificados</h1>
+    </div>
+  </header>
+
+  <main class="container flex-grow-1">
+
+
+
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
+   <button  class="btn btn-primary mb-3" id="buttonInicio" style="display: none;" onclick="iniciar()">Iniciar</button>
+    <button  class="btn btn-danger mb-3" id="buttonBorrar" style="display: none;" onclick="borrar()">Borrar</button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Precio</th>
+          
+        </tr>
+      </thead>
+      <tbody id="tableBody2">
+       rrer
+      </tbody>
+    </table>
+
+
+    <div class="card">
+  <div class="card-body" id="cardBody">
+    
+  </div>
+</div>
+  </main>
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Seleccionar ingredientes</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Precio</th>
+          
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+       rrer
+      </tbody>
+    </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
